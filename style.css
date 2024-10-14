@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: black;
+    color: white;
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(10, 40px);
+    grid-template-rows: repeat(10, 40px);
+    gap: 1px;
+    background-color: black;
+    margin: 20px 0;
+}
+
+.cell {
+    width: 40px;
+    height: 40px;
+    background-color: #111;
+    position: relative;
+}
+
+.pacman {
+    background-color: yellow;
+    border-radius: 50%;
+}
+
+.coin {
+    background-color: gold;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.obstacle {
+    background-color: grey;
+}
